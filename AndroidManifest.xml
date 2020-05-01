@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.habithelper">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/habithelper"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/habithelper"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".game2"></activity>
+        <activity android:name=".game1" />
+        <activity android:name=".fun" />
+        <activity android:name=".view" />
+        <activity android:name=".Home" />
+        <activity android:name=".addHabit" />
+        <activity android:name=".Pomo" />
+        <activity android:name=".Activity2" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

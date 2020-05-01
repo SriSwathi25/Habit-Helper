@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Habit Helper</string>
+    <string name="button1">Update Dailies</string>
+    <string name="button2">Add\nHabit</string>
+    <string name="button3">View\nHabits</string>
+    <string name="button4">Pomo\nTimer</string>
+    <string name="button5">Fun\nZone</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="h_name">"Habit Name"</string>
+    <string name="session_time">"When will you perform this task?"</string>
+    <string name="freq">"For how many days from now, will you perform this task?"</string>
+    <string name="motiv">"Your motivation message for performing this task?"</string>
+    <string name="health_tv">"Danger\t\t\t\t\t\t\t\t\t\tGood\t\t\t\t\t\t\t\t\t\t\tExcellent"</string>
+
+</resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <ImageView
+        android:id="@+id/reaction"
+        android:layout_width="105dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/claps"
+        tools:visibility="invisible" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="fill"
+        android:layout_marginBottom="8dp"
+        app:columnCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rowCount="1">
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="70sp"
+            android:layout_height="100sp"
+
+            android:background="#FFCDD2"
+            android:text="@string/button1"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/addHabit"
+            android:layout_width="70sp"
+            android:layout_height="100sp"
+
+            android:background="#E1BEE7"
+            android:text="@string/button2"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/viewButton"
+            android:layout_width="70sp"
+            android:layout_height="100sp"
+
+            android:background="#C5CAE9"
+            android:text="@string/button3"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/pomo"
+            android:layout_width="70sp"
+            android:layout_height="100sp"
+            android:background="#B3E5FC"
+            android:text="@string/button4"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/fun_zone"
+            android:layout_width="70sp"
+            android:layout_height="100sp"
+            android:background="#DCEDC8"
+            android:text="@string/button5"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <ProgressBar
+        android:id="@+id/healthBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#00AD3131"
+        android:progress="80"
+        android:scaleY="8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/health_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/health_tv"
+        android:textColor="#C41C1C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/healthBar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="62dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reaction"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/health_tv"
+        app:srcCompat="@drawable/fire" />
+
+    <TextView
+        android:id="@+id/streak_heading_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Highest Streak so far :"
+        android:textAllCaps="false"
+        android:textColor="#F76606"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/highest_streak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:text="0 days"
+        android:textColor="#0A0A0A"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/streak_heading_1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/streak_heading_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="29dp"
+        android:text="Least Streak so far     :"
+        android:textAllCaps="false"
+        android:textColor="#F76606"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/streak_heading_1" />
+
+    <TextView
+        android:id="@+id/lowest_Streak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="29dp"
+        android:text="0 days"
+        android:textColor="#0A0A0A"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/streak_heading_2"
+        app:layout_constraintTop_toBottomOf="@+id/highest_streak" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Health Progress Bar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#D52020"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reaction" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
